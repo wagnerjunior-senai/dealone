@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #fffaf8;
+
+    color: #493438;
+
+    line-height: 1.7;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background-color: #ead0d2;
+
+    padding: 20px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+
+    letter-spacing: 5px;
+
+    font-size: 30px;
+}
+
+header p {
+    font-size: 13px;
+
+    color: #6b4c52;
+}
+
+
+/* MENU */
+
+nav a {
+    color: #493438;
+
+    text-decoration: none;
+
+    margin-left: 22px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ae7580;
+}
+
+
+/* ÁREA DO CHAT */
+
+.chat-container {
+    width: 90%;
+
+    max-width: 650px;
+
+    margin: 60px auto;
+
+    padding: 35px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #ead0d2;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(73, 52, 56, 0.10);
+}
+
+.chat-container h2 {
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    text-align: center;
+
+    margin-bottom: 15px;
+}
+
+.descricao {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+/* CAMPOS */
+
+label {
+    display: block;
+
+    margin-top: 18px;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #d8babc;
+
+    border-radius: 8px;
+
+    background-color: #fffaf8;
+
+    color: #493438;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ae7580;
+
+    box-shadow: 0 0 0 2px rgba(174, 117, 128, 0.12);
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* BOTÃO */
+
+button {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #ae7580;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #925e69;
+
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background-color: #c9a4aa;
+
+    cursor: wait;
+
+    transform: none;
+}
+
+
+/* STATUS */
+
+#status {
+    margin-top: 18px;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+/* RESPOSTA */
+
+#resposta {
+    margin-top: 20px;
+
+    padding: 20px;
+
+    min-height: 60px;
+
+    background-color: #fffaf8;
+
+    border-left: 4px solid #ae7580;
+
+    border-radius: 8px;
+
+    white-space: pre-wrap;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+
+    header {
+        justify-content: center;
+
+        text-align: center;
+
+        gap: 15px;
+    }
+
+    nav {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+
+        margin: 5px 8px;
+    }
+
+    .chat-container {
+        width: 94%;
+
+        padding: 25px 18px;
+
+        margin-top: 35px;
+    }
+
+}

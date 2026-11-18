@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Deary | DEAR ONE</title>
+
+    <link rel="stylesheet" href="styleChatBotEmpresa.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <div>
+            <h1>DEAR ONE</h1>
+
+            <p>
+                Loja de Personalizados
+            </p>
+        </div>
+
+
+        <!-- MENU -->
+
+        <nav>
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a href="sobre.html">
+                Sobre
+            </a>
+
+            <a href="htmlChatEmpresa.html">
+                Deary
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CHAT -->
+
+    <main class="chat-container">
+
+        <h2>
+            Fale com a Deary
+        </h2>
+
+        <p class="descricao">
+            Olá! Eu sou a Deary, assistente virtual da DEAR ONE.
+            Estou aqui para ajudar com dúvidas gerais sobre nossa loja.
+        </p>
+
+
+        <!-- CHAVE -->
+
+        <label for="apiKey">
+            Chave da API
+        </label>
+
+        <input
+            type="password"
+            id="apiKey"
+            placeholder="Cole sua chave da API aqui"
+        >
+
+
+        <!-- MENSAGEM -->
+
+        <label for="mensagem">
+            Sua mensagem
+        </label>
+
+        <textarea
+            id="mensagem"
+            rows="5"
+            placeholder="Digite sua pergunta para a Deary..."
+        ></textarea>
+
+
+        <!-- BOTÃO -->
+
+        <button
+            type="button"
+            id="btnEnviar">
+            Enviar
+        </button>
+
+
+        <!-- STATUS -->
+
+        <div id="status"></div>
+
+
+        <!-- RESPOSTA -->
+
+        <div id="resposta"></div>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="scriptChatEmpresa.js"></script>
+
+</body>
+
+</html>

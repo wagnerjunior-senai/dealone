@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DEAR ONE | Loja de Personalizados</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffaf8;
+            color: #493438;
+            line-height: 1.7;
+        }
+
+        /* =========================
+           CABEÇALHO
+        ========================= */
+
+        header {
+            background-color: #ead0d2;
+            padding: 20px 8%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            font-family: Georgia, serif;
+            letter-spacing: 5px;
+            font-size: 30px;
+        }
+
+        .subtitulo {
+            font-size: 14px;
+            color: #6b4c52;
+        }
+
+        /* =========================
+           MENU
+        ========================= */
+
+        nav a {
+            color: #493438;
+            text-decoration: none;
+            margin-left: 22px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ae7580;
+        }
+
+        /* =========================
+           CONTEÚDO
+        ========================= */
+
+        .conteudo {
+            max-width: 1000px;
+            margin: 65px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .conteudo h2 {
+            font-family: Georgia, serif;
+            font-size: 34px;
+            margin-bottom: 20px;
+        }
+
+        .introducao {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .introducao p {
+            margin-bottom: 18px;
+        }
+
+        /* =========================
+           BLOCO DE DESTAQUE
+        ========================= */
+
+        .destaque {
+            background-color: #ead0d2;
+            margin-top: 45px;
+            padding: 35px 30px;
+            border-radius: 12px;
+        }
+
+        .destaque h3 {
+            font-family: Georgia, serif;
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        .destaque p {
+            max-width: 750px;
+            margin: 0 auto 12px;
+        }
+
+        /* =========================
+           SERVIÇOS
+        ========================= */
+
+        .servicos {
+            margin-top: 55px;
+        }
+
+        .servicos h3 {
+            font-family: Georgia, serif;
+            font-size: 27px;
+            margin-bottom: 25px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 280px;
+            min-height: 180px;
+
+            background-color: #ffffff;
+
+            border: 1px solid #ead0d2;
+
+            border-radius: 12px;
+
+            padding: 25px 20px;
+
+            box-shadow: 0 3px 10px rgba(73, 52, 56, 0.08);
+        }
+
+        .card h4 {
+            font-family: Georgia, serif;
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #493438;
+        }
+
+        .card p {
+            font-size: 14px;
+        }
+
+        /* =========================
+           FRASE
+        ========================= */
+
+        .frase {
+            margin-top: 55px;
+            font-family: Georgia, serif;
+            font-size: 23px;
+            color: #ae7580;
+        }
+
+        /* =========================
+           BOTÕES
+        ========================= */
+
+        .botoes {
+            margin-top: 30px;
+        }
+
+        .botao {
+            display: inline-block;
+
+            margin: 8px;
+
+            padding: 12px 25px;
+
+            background-color: #ae7580;
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 10px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background-color: #925e69;
+            transform: translateY(-2px);
+        }
+
+        /* =========================
+           RODAPÉ
+        ========================= */
+
+        footer {
+            margin-top: 80px;
+
+            background-color: #ead0d2;
+
+            text-align: center;
+
+            padding: 25px 20px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* =========================
+           RESPONSIVIDADE
+        ========================= */
+
+        @media (max-width: 700px) {
+
+            header {
+                justify-content: center;
+                text-align: center;
+                gap: 20px;
+            }
+
+            nav {
+                width: 100%;
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            .conteudo {
+                margin: 40px auto;
+            }
+
+            .conteudo h2 {
+                font-size: 27px;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            .frase {
+                font-size: 20px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header>
+
+        <div>
+
+            <h1>DEAR ONE</h1>
+
+            <p class="subtitulo">
+                Loja de Personalizados
+            </p>
+
+        </div>
+
+
+        <nav>
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a href="sobre.html">
+                Sobre
+            </a>
+
+            <a href="htmlChatEmpresa.html">
+                Deary
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         CONTEÚDO PRINCIPAL
+    ========================== -->
+
+    <main class="conteudo">
+
+
+        <section class="introducao">
+
+            <h2>
+                Peças únicas, feitas com carinho
+            </h2>
+
+            <p>
+                <strong>
+                    Bem-vindo à DEAR ONE
+                </strong>
+            </p>
+
+            <p>
+                Loja de personalizados em geral, criada para
+                transformar suas ideias em peças únicas e especiais.
+            </p>
+
+            <p>
+                Na DEAR ONE, acreditamos que cada pessoa possui
+                uma ideia especial. Por isso, criamos produtos
+                personalizados para tornar seus momentos ainda
+                mais únicos.
+            </p>
+
+            <p>
+                <strong>
+                    Sua ideia, nossa criação.
+                </strong>
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             DESTAQUE
+        ========================== -->
+
+        <section class="destaque">
+
+            <h3>
+                Personalização feita para você
+            </h3>
+
+            <p>
+                Escolha sua ideia, conte para nós como deseja
+                seu produto e deixe a DEAR ONE transformar sua
+                inspiração em uma peça personalizada.
+            </p>
+
+            <p>
+                Cada detalhe é pensado com carinho para que
+                o resultado tenha a sua identidade.
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             SERVIÇOS
+        ========================== -->
+
+        <section class="servicos">
+
+            <h3>
+                O que fazemos
+            </h3>
+
+
+            <div class="cards">
+
+
+                <div class="card">
+
+                    <h4>
+                        Produtos Personalizados
+                    </h4>
+
+                    <p>
+                        Criamos peças personalizadas de acordo
+                        com a sua ideia e preferência.
+                    </p>
+
+                </div>
+
+
+
+                <div class="card">
+
+                    <h4>
+                        Presentes Especiais
+                    </h4>
+
+                    <p>
+                        Personalizações pensadas para tornar
+                        datas e momentos especiais ainda mais
+                        marcantes.
+                    </p>
+
+                </div>
+
+
+
+                <div class="card">
+
+                    <h4>
+                        Sua Ideia
+                    </h4>
+
+                    <p>
+                        Você imagina, nós ajudamos a transformar
+                        essa ideia em uma criação única.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             FRASE
+        ========================== -->
+
+        <p class="frase">
+            “Sua ideia, nossa criação.”
+        </p>
+
+
+
+        <!-- =========================
+             BOTÕES
+        ========================== -->
+
+        <div class="botoes">
+
+            <a href="sobre.html" class="botao">
+                Conheça a DEAR ONE
+            </a>
+
+
+            <a href="htmlChatEmpresa.html" class="botao">
+                Fale com a Deary
+            </a>
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 DEAR ONE — Loja de Personalizados
+        </p>
+
+        <p>
+            Peças únicas, feitas com carinho.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
